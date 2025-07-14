@@ -14,7 +14,7 @@ export default function AboutPage() {
 
         <div className="about-content">
           <div className="about-text">
-            <h2>Notre mission</h2>
+            <h2>Notre contacter, vous écouter</h2>
             <p>
               Nous croyons au pouvoir du jeu pour rapprocher les gens. C’est pourquoi nous
               vous proposons une sélection de jeux variés, pour tous les âges, tous les goûts

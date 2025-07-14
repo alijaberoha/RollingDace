@@ -3,7 +3,6 @@
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
-  min-height: 90vh;
   justify-content: center;
 }
 .produits-cotent {
@@ -14,7 +13,6 @@
   align-items: flex-start;
   padding: 40px;
   gap: 60px;
-  min-height: 70vh;
 
 }
 body{

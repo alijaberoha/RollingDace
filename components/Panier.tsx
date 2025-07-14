@@ -1,17 +1,19 @@
 "use client";
 import "../styles/panier.css";
 import { useEffect } from "react";
-import "./Panier.css"; // tu peux créer ce fichier à côté
+import "../styles/panier.css"; // tu peux créer ce fichier à côté
 import { FaShoppingCart } from "react-icons/fa";
 import { useAppDispatch, useAppSelector } from "@/lib/store";
 import { incrementerQuantite, decrementerQuantite, supprimerDuPanier } from "@/features/panierSlice";
-
+import Link from "next/link";
 type Props = {
   isOpen: boolean;
   onClose: () => void;
+  hideCommanderButton?: boolean;
 };
 
-export default function Panier({ isOpen, onClose }: Props) {
+
+export default function Panier({ isOpen, onClose, hideCommanderButton }: Props) {
     const dispatch = useAppDispatch(); // ✅ tu avais oublié ça
   const { items } = useAppSelector((state) => state.panier);
   
@@ -64,7 +66,12 @@ export default function Panier({ isOpen, onClose }: Props) {
           <div className="total">
             <strong>Total :</strong> {total.toFixed(2)} €
           </div>
-          <button className="checkout-btn">Commander</button>
+{!hideCommanderButton && (
+  <Link href="/checkout">
+    <button className="checkout-btn">Commander</button>
+  </Link>
+)}
+
         </div>
       )}
   </div>

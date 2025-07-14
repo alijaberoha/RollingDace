@@ -1,4 +1,3 @@
-// features/panierSlice.ts
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface ProduitPanier {
@@ -42,7 +41,12 @@ const panierSlice = createSlice({
     },
     supprimerDuPanier: (state, action: PayloadAction<string>) => {
       state.items = state.items.filter(item => item.id !== action.payload);
-    }
+    },
+    
+    // ✅ AJOUT ICI
+    viderPanier: (state) => {
+      state.items = [];
+    },
   }
 });
 
@@ -50,7 +54,8 @@ export const {
   ajouterAuPanier,
   incrementerQuantite,
   decrementerQuantite,
-  supprimerDuPanier
+  supprimerDuPanier,
+  viderPanier // ✅ N'oublie pas d'exporter l'action ici
 } = panierSlice.actions;
 
 export default panierSlice.reducer;
