@@ -1,0 +1,648 @@
+[
+
+  {
+    "id": "449472",
+    "name": "Blood Rage: Valhalla",
+    "thumbnail": "https://cf.geekdo-images.com/Kl7Ozg_a4GLkwE2kg9pAzQ__thumb/img/GKfBhwTRDiz1HceXTpaobQ4dqU4=/fit-in/200x150/filters:strip_icc()/pic8967559.jpg",
+    "yearpublished": "2026",
+    "price": 34.50,
+    "players": {
+      "min": 3,
+      "max": 5
+    },
+    "description": "Rejoignez les guerriers du Valhalla dans une bataille épique pour la gloire.",
+    "age": 14,
+    "rating": 9.1
+  },
+  {
+    "id": "446493",
+    "name": "Recall",
+    "thumbnail": "https://cf.geekdo-images.com/lZL0ID86ZmraJDGWO-Dyig__thumb/img/2Jx9NhxnhFMQNYeCkzDsm-j-G2k=/fit-in/200x150/filters:strip_icc()/pic8886325.png",
+    "yearpublished": "2025",
+    "price": 18.90,
+    "players": {
+      "min": 2,
+      "max": 6
+    },
+    "description": "Un jeu de mémoire intense où chaque détail compte.",
+    "age": 10,
+    "rating": 7.3
+  },
+  {
+    "id": "438442",
+    "name": "Feya's Swamp",
+    "thumbnail": "https://cf.geekdo-images.com/lxzo9PekKd4TRyBUlLH7Yw__thumb/img/1cEL93SEH6KEoO7CAlde9Sqi12s=/fit-in/200x150/filters:strip_icc()/pic8703614.png",
+    "yearpublished": "2025",
+    "price": 22.75,
+    "players": {
+      "min": 2,
+      "max": 4
+    },
+    "description": "Explorez le marais mystérieux de Feya et survivez à ses pièges.",
+    "age": 9,
+    "rating": 7.9
+  },
+  {
+    "id": "438975",
+    "name": "Sail Legacy",
+    "thumbnail": "https://cf.geekdo-images.com/lRNcxndptSAF_-_pULQl5w__thumb/img/6br3btDYug0h3q868AZVQp78xdc=/fit-in/200x150/filters:strip_icc()/pic8694781.jpg",
+    "yearpublished": "2026",
+    "price": 28.90,
+    "players": {
+      "min": 2,
+      "max": 5
+    },
+    "description": "Partez à l'aventure en mer et construisez votre propre légende de pirate.",
+    "age": 10,
+    "rating": 8.4
+  },
+  {
+    "id": "432705",
+    "name": "Ofrenda",
+    "thumbnail": "https://cf.geekdo-images.com/9ZFHtzDq5LIV-t3x_oM-tQ__thumb/img/vvSMCznidJHIzqfA1QZ17lo4M0w=/fit-in/200x150/filters:strip_icc()/pic8574369.jpg",
+    "yearpublished": "2025",
+    "price": 24.50,
+    "players": {
+      "min": 3,
+      "max": 6
+    },
+    "description": "Un jeu immersif sur les traditions et l'hommage aux ancêtres.",
+    "age": 12,
+    "rating": 7.8
+  },
+  {
+    "id": "334827",
+    "name": "Starship Interstellar",
+    "thumbnail": "https://cf.geekdo-images.com/iKx0h_a_jEGuXZ5v7yDjVw__thumb/img/vQKaxtek3Y8V3UYyv2ewkBvRtFk=/fit-in/200x150/filters:strip_icc()/pic6083685.jpg",
+    "yearpublished": "2024",
+    "price": 36.00,
+    "players": {
+      "min": 2,
+      "max": 4
+    },
+    "description": "Colonisez l'univers et explorez les confins de la galaxie.",
+    "age": 13,
+    "rating": 8.7
+  },
+  {
+    "id": "418059",
+    "name": "SETI: Search for Extraterrestrial Intelligence",
+    "thumbnail": "https://cf.geekdo-images.com/_BUXOVRDU9g_eRwgpR5ZZw__thumb/img/icamIZ4nP3HHH3vczZqTr1hQgKY=/fit-in/200x150/filters:strip_icc()/pic8160466.jpg",
+    "yearpublished": "2024",
+    "price": 27.40,
+    "players": {
+      "min": 1,
+      "max": 4
+    },
+    "description": "Menez la quête scientifique pour découvrir une vie extraterrestre.",
+    "age": 14,
+    "rating": 8.1
+  },
+  {
+    "id": "420087",
+    "name": "Flip 7",
+    "thumbnail": "https://cf.geekdo-images.com/YrQxEB9Ef0kQorRApzG5vQ__thumb/img/_dNNsSelyw9qUEOIXBRt6PE_1us=/fit-in/200x150/filters:strip_icc()/pic8780246.jpg",
+    "yearpublished": "2024",
+    "price": 16.80,
+    "players": {
+      "min": 2,
+      "max": 6
+    },
+    "description": "Un jeu rapide et stratégique basé sur les retournements de situation.",
+    "age": 8,
+    "rating": 7.6
+  },
+  {
+    "id": "342942",
+    "name": "Ark Nova",
+    "thumbnail": "https://cf.geekdo-images.com/SoU8p28Sk1s8MSvoM4N8pQ__thumb/img/4KuHNTWSMPf8vTNDKSRMMI3oOv8=/fit-in/200x150/filters:strip_icc()/pic6293412.jpg",
+    "yearpublished": "2021",
+    "price": 35.99,
+    "players": {
+      "min": 1,
+      "max": 4
+    },
+    "description": "Créez le zoo le plus performant en combinant stratégie et conservation.",
+    "age": 14,
+    "rating": 9.0
+  },
+  {
+    "id": "436217",
+    "name": "The Lord of the Rings: Fate of the Fellowship",
+    "thumbnail": "https://cf.geekdo-images.com/scw36iBIad7l-rGzxPGcGg__thumb/img/dyMBa6SBkPwpWfA4FINqbX8RNDQ=/fit-in/200x150/filters:strip_icc()/pic8662670.png",
+    "yearpublished": "2025",
+    "price": 32.75,
+    "players": {
+      "min": 2,
+      "max": 5
+    },
+    "description": "Revivez l'épopée de la Communauté de l'Anneau dans ce jeu narratif intense.",
+    "age": 12,
+    "rating": 8.3
+  },
+  {
+    "id": "433908",
+    "name": "Gatsby",
+    "thumbnail": "https://cf.geekdo-images.com/OiRuY6uGTbE6exUlzLXwYw__thumb/img/0ye8BLJb9AiRrim88mDpJLivedM=/fit-in/200x150/filters:strip_icc()/pic8572393.jpg",
+    "yearpublished": "2025",
+    "price": 19.90,
+    "players": {
+      "min": 3,
+      "max": 6
+    },
+    "description": "Plongez dans l'univers des années folles entre secrets, luxe et intrigues.",
+    "age": 10,
+    "rating": 7.5
+  },
+  {
+    "id": "63888",
+    "name": "Innovation",
+    "thumbnail": "https://cf.geekdo-images.com/l4fVXtRnhKMf5UPn78rEdg__thumb/img/xMh4wYMS9nA77f3KScqZsWurVgQ=/fit-in/200x150/filters:strip_icc()/pic8792317.png",
+    "yearpublished": "2010",
+    "price": 22.10,
+    "players": {
+      "min": 2,
+      "max": 4
+    },
+    "description": "Un jeu de civilisation tactique où les inventions dictent votre stratégie.",
+    "age": 12,
+    "rating": 7.9
+  },
+  {
+    "id": "421006",
+    "name": "The Lord of the Rings: Duel for Middle-earth",
+    "thumbnail": "https://cf.geekdo-images.com/EybxJlUc9rz7F7HVFLqsdw__thumb/img/rojFW0-h-bteedVG4aJXG1x7V0o=/fit-in/200x150/filters:strip_icc()/pic8378939.jpg",
+    "yearpublished": "2024",
+    "price": 27.60,
+    "players": {
+      "min": 2,
+      "max": 2
+    },
+    "description": "Affrontez-vous en duel dans un face-à-face stratégique au cœur de la Terre du Milieu.",
+    "age": 13,
+    "rating": 8.0
+  }
+  ,{
+    "id": "436059",
+    "name": "Nucleum: Energy Research Institute",
+    "thumbnail": "https://cf.geekdo-images.com/oEBVB1mHzV9pEAze_WnaAQ__thumb/img/ztpYszEMV-XUmmFLiWZxYFvOXIU=/fit-in/200x150/filters:strip_icc()/pic8616290.jpg",
+    "yearpublished": "2025",
+    "price": 33.50,
+    "players": {
+      "min": 2,
+      "max": 4
+    },
+    "description": "Un jeu de gestion et de développement dans le domaine de l’énergie nucléaire.",
+    "age": 14,
+    "rating": 8.5
+  },
+  {
+    "id": "413246",
+    "name": "Bomb Busters",
+    "thumbnail": "https://cf.geekdo-images.com/HpGXIlt5i6T-0jbiQRReOg__thumb/img/8wfQelnNsbXCykJWMjD8UAjhleU=/fit-in/200x150/filters:strip_icc()/pic8303080.png",
+    "yearpublished": "2024",
+    "price": 21.00,
+    "players": {
+      "min": 2,
+      "max": 6
+    },
+    "description": "Désamorcez des bombes et défiez vos nerfs dans ce jeu rapide et explosif.",
+    "age": 10,
+    "rating": 7.4
+  },
+  {
+    "id": "397931",
+    "name": "Deep Regrets",
+    "thumbnail": "https://cf.geekdo-images.com/WUvpRzsNSZgq1gyvjiQcWw__thumb/img/XJyLMXaTHUGyAv7n-G0DpR1W1SU=/fit-in/200x150/filters:strip_icc()/pic8156363.jpg",
+    "yearpublished": "2025",
+    "price": 26.80,
+    "players": {
+      "min": 3,
+      "max": 5
+    },
+    "description": "Un jeu narratif sombre où vos choix passés influencent votre avenir.",
+    "age": 16,
+    "rating": 8.2
+  },
+  {
+    "id": "388367",
+    "name": "Innovation Ultimate",
+    "thumbnail": "https://cf.geekdo-images.com/n3oc3G4fIsrGwqD_i0fjTA__thumb/img/sO-dblU1r9xEcyhY4RGFD76Drqs=/fit-in/200x150/filters:strip_icc()/pic8790819.png",
+    "yearpublished": "2025",
+    "price": 24.99,
+    "players": {
+      "min": 2,
+      "max": 6
+    },
+    "description": "La version ultime du classique Innovation avec de nouvelles cartes et mécaniques.",
+    "age": 13,
+    "rating": 7.8
+  },
+  {
+    "id": "414317",
+    "name": "Harmonies",
+    "thumbnail": "https://cf.geekdo-images.com/A_XP2_VN3ugyqPhezowB_w__thumb/img/ln5eKAzhse2PIHvWn7bu-jiW_uk=/fit-in/200x150/filters:strip_icc()/pic8026369.png",
+    "yearpublished": "2024",
+    "price": 30.00,
+    "players": {
+      "min": 2,
+      "max": 4
+    },
+    "description": "Un jeu apaisant où vous créez des paysages harmonieux avec stratégie et calme.",
+    "age": 8,
+    "rating": 8.0
+  }
+,{
+    "id": "391163",
+    "name": "Forest Shuffle",
+    "thumbnail": "https://cf.geekdo-images.com/08bC8NviSTNc4Zvur4pueA__thumb/img/Xq8TNBmMl3Z7DoynvbUXchFAztc=/fit-in/200x150/filters:strip_icc()/pic7578350.jpg",
+    "yearpublished": "2023",
+    "price": 21.90,
+    "players": {
+      "min": 2,
+      "max": 4
+    },
+    "description": "Créez une forêt prospère en combinant les bonnes cartes faune et flore.",
+    "age": 8,
+    "rating": 7.7
+  },
+  {
+    "id": "365717",
+    "name": "Clank!: Catacombs",
+    "thumbnail": "https://cf.geekdo-images.com/cCLn9Mvb7jRSaZzHeUXhoQ__thumb/img/B8BFQLR2Po3ekI_7XSG1kR9oil0=/fit-in/200x150/filters:strip_icc()/pic6937913.jpg",
+    "yearpublished": "2022",
+    "price": 34.80,
+    "players": {
+      "min": 2,
+      "max": 4
+    },
+    "description": "Explorez des catacombes en constante évolution tout en évitant le dragon.",
+    "age": 12,
+    "rating": 8.1
+  },
+  {
+    "id": "366013",
+    "name": "Heat: Pedal to the Metal",
+    "thumbnail": "https://cf.geekdo-images.com/-vOrd4bOspibyohYExLqWg__thumb/img/2GbaKvYOzWIxfgbYTk2R9puiyzo=/fit-in/200x150/filters:strip_icc()/pic6940449.png",
+    "yearpublished": "2022",
+    "price": 32.40,
+    "players": {
+      "min": 1,
+      "max": 6
+    },
+    "description": "Participez à des courses de voitures effrénées en gérant la chaleur de votre moteur.",
+    "age": 10,
+    "rating": 8.6
+  },
+  {
+    "id": "162886",
+    "name": "Spirit Island",
+    "thumbnail": "https://cf.geekdo-images.com/kjCm4ZvPjIZxS-mYgSPy1g__thumb/img/aUlIih2_R7P8IYKeyNl2heLQbu8=/fit-in/200x150/filters:strip_icc()/pic7013651.jpg",
+    "yearpublished": "2017",
+    "price": 37.00,
+    "players": {
+      "min": 1,
+      "max": 4
+    },
+    "description": "Incarnez des esprits puissants et protégez votre île contre les envahisseurs.",
+    "age": 14,
+    "rating": 9.0
+  },
+  {
+    "id": "312484",
+    "name": "Lost Ruins of Arnak",
+    "thumbnail": "https://cf.geekdo-images.com/6GqH14TJJhza86BX5HCLEQ__thumb/img/J8SVmGOJXZGxNjkT3xYNQU7Haxg=/fit-in/200x150/filters:strip_icc()/pic5674958.jpg",
+    "yearpublished": "2020",
+    "price": 31.60,
+    "players": {
+      "min": 1,
+      "max": 4
+    },
+    "description": "Explorez des ruines mystérieuses à la recherche de trésors et de secrets anciens.",
+    "age": 12,
+    "rating": 8.3
+  }
+,  {
+    "id": "377470",
+    "name": "Sail",
+    "thumbnail": "https://cf.geekdo-images.com/WdYRHQ_ILHTV_ECMGF27Gw__thumb/img/y8Hlu0-CQDQAO6d6zM8YJ3dVevI=/fit-in/200x150/filters:strip_icc()/pic7267575.jpg",
+    "yearpublished": "2023",
+    "price": 18.90,
+    "players": {
+      "min": 2,
+      "max": 2
+    },
+    "description": "Naviguez en coopération pour survivre aux dangers marins et vaincre le Kraken.",
+    "age": 10,
+    "rating": 7.6
+  },
+  {
+    "id": "224517",
+    "name": "Brass: Birmingham",
+    "thumbnail": "https://cf.geekdo-images.com/x3zxjr-Vw5iU4yDPg70Jgw__thumb/img/o18rjEemoWaVru9Y2TyPwuIaRfE=/fit-in/200x150/filters:strip_icc()/pic3490053.jpg",
+    "yearpublished": "2018",
+    "price": 39.90,
+    "players": {
+      "min": 2,
+      "max": 4
+    },
+    "description": "Un jeu stratégique sur la révolution industrielle et le développement économique.",
+    "age": 14,
+    "rating": 9.1
+  },
+  {
+    "id": "408180",
+    "name": "Shackleton Base: A Journey to the Moon",
+    "thumbnail": "https://cf.geekdo-images.com/XE4S_nXyHVvld2BOrDmA7Q__thumb/img/DAbZgOJbckBSg9Qq8rpdEhzpq_I=/fit-in/200x150/filters:strip_icc()/pic7897060.jpg",
+    "yearpublished": "2024",
+    "price": 27.30,
+    "players": {
+      "min": 2,
+      "max": 4
+    },
+    "description": "Conquérez la Lune dans cette course scientifique et logistique pleine de défis.",
+    "age": 12,
+    "rating": 8.0
+  },
+  {
+    "id": "367220",
+    "name": "Sea Salt & Paper",
+    "thumbnail": "https://cf.geekdo-images.com/CIh_rXKoRw9z8K0PJxT8nQ__thumb/img/Jh6NjibuHeYrZtSsAUXq82B1fTQ=/fit-in/200x150/filters:strip_icc()/pic6973911.jpg",
+    "yearpublished": "2022",
+    "price": 12.00,
+    "players": {
+      "min": 2,
+      "max": 4
+    },
+    "description": "Un petit jeu malin aux cartes pliées, où bluff et tactique sont au rendez-vous.",
+    "age": 8,
+    "rating": 7.5
+  },
+  {
+    "id": "167791",
+    "name": "Terraforming Mars",
+    "thumbnail": "https://cf.geekdo-images.com/wg9oOLcsKvDesSUdZQ4rxw__thumb/img/BTxqxgYay5tHJfVoJ2NF5g43_gA=/fit-in/200x150/filters:strip_icc()/pic3536616.jpg",
+    "yearpublished": "2016",
+    "price": 36.50,
+    "players": {
+      "min": 1,
+      "max": 5
+    },
+    "description": "Prenez part à la colonisation de Mars et transformez la planète rouge en un nouvel habitat.",
+    "age": 12,
+    "rating": 8.5
+  }
+ , {
+    "id": "391137",
+    "name": "Galactic Cruise",
+    "thumbnail": "https://cf.geekdo-images.com/l-LMcklO683dyVlnRZS3mg__thumb/img/8usx0HfsTXTpE2kklVRMtJGAwFY=/fit-in/200x150/filters:strip_icc()/pic7556818.jpg",
+    "yearpublished": "2025",
+    "price": 30.80,
+    "players": {
+      "min": 2,
+      "max": 5
+    },
+    "description": "Offrez des croisières stellaires luxueuses et gérez votre flotte dans l'espace.",
+    "age": 12,
+    "rating": 8.2
+  },
+  {
+    "id": "338960",
+    "name": "Slay the Spire: The Board Game",
+    "thumbnail": "https://cf.geekdo-images.com/PQzVclEoOQ_wr4e1V86kxA__thumb/img/cpmsSDagE5RvQ1ERXl-fMJIaUUg=/fit-in/200x150/filters:strip_icc()/pic8157856.png",
+    "yearpublished": "2024",
+    "price": 36.90,
+    "players": {
+      "min": 1,
+      "max": 4
+    },
+    "description": "Affrontez des monstres dans un donjon généré aléatoirement avec un système de deckbuilding.",
+    "age": 13,
+    "rating": 8.6
+  },
+  {
+    "id": "237182",
+    "name": "Root",
+    "thumbnail": "https://cf.geekdo-images.com/JUAUWaVUzeBgzirhZNmHHw__thumb/img/ACovMZzGGIsBRyEQXFnsT8282NM=/fit-in/200x150/filters:strip_icc()/pic4254509.jpg",
+    "yearpublished": "2018",
+    "price": 32.00,
+    "players": {
+      "min": 2,
+      "max": 4
+    },
+    "description": "Un jeu asymétrique de guerre et de stratégie dans une forêt animée par des factions animales.",
+    "age": 10,
+    "rating": 8.4
+  },
+  {
+    "id": "397598",
+    "name": "Dune: Imperium – Uprising",
+    "thumbnail": "https://cf.geekdo-images.com/UVUkjMV_Q2paVUIUP30Vvw__thumb/img/H6qmxJrRFjtOAPZOfDoZ480-46I=/fit-in/200x150/filters:strip_icc()/pic7664424.jpg",
+    "yearpublished": "2023",
+    "price": 34.50,
+    "players": {
+      "min": 1,
+      "max": 6
+    },
+    "description": "Menez votre maison vers la domination sur Arrakis dans cette suite de Dune: Imperium.",
+    "age": 14,
+    "rating": 8.7
+  },
+  {
+    "id": "400602",
+    "name": "Civolution",
+    "thumbnail": "https://cf.geekdo-images.com/DahMIPzUpexvhUPAG3dGbA__thumb/img/uzogBNlLw3GBuGa1T6_8oQbADnY=/fit-in/200x150/filters:strip_icc()/pic8303209.jpg",
+    "yearpublished": "2024",
+    "price": 28.40,
+    "players": {
+      "min": 2,
+      "max": 4
+    },
+    "description": "Faites évoluer votre civilisation à travers les âges dans un jeu de stratégie profonde.",
+    "age": 12,
+    "rating": 8.0
+  }
+,
+  
+  {
+    "id": "404431",
+    "name": "Men-Nefer",
+    "thumbnail": "https://cf.geekdo-images.com/hMkpLfORIUsMe4dHuuHPyg__thumb/img/jlC58ndBNtI6kTO61AwdUhBMgHQ=/fit-in/200x150/filters:strip_icc()/pic7984201.jpg",
+    "yearpublished": "2024",
+    "price": 26.90,
+    "players": {
+      "min": 2,
+      "max": 4
+    },
+    "description": "Plongez dans l’Égypte antique pour construire et faire prospérer Men-Nefer.",
+    "age": 10,
+    "rating": 7.9
+  },
+  {
+    "id": "316554",
+    "name": "Dune: Imperium",
+    "thumbnail": "https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__thumb/img/JGgY-nBmkyB8WRp8vcoBLlNMQ5U=/fit-in/200x150/filters:strip_icc()/pic5666597.jpg",
+    "yearpublished": "2020",
+    "price": 34.90,
+    "players": {
+      "min": 1,
+      "max": 4
+    },
+    "description": "Un jeu de deck-building et de placement d’ouvriers dans l’univers de Dune.",
+    "age": 13,
+    "rating": 8.6
+  },
+  {
+    "id": "367966",
+    "name": "Endeavor: Deep Sea",
+    "thumbnail": "https://cf.geekdo-images.com/wIbevITv9W79ELP8rEZoKA__thumb/img/7_DqsUgdrpbeLfkA2ko8bXhgpGw=/fit-in/200x150/filters:strip_icc()/pic6996584.jpg",
+    "yearpublished": "2024",
+    "price": 30.50,
+    "players": {
+      "min": 2,
+      "max": 5
+    },
+    "description": "Explorez les profondeurs océaniques et protégez l'écosystème marin.",
+    "age": 12,
+    "rating": 8.1
+  },
+  {
+    "id": "400366",
+    "name": "Wondrous Creatures",
+    "thumbnail": "https://cf.geekdo-images.com/3ue_3La0WYopTSDER3shUA__thumb/img/4SreytxNoZL435EkTriKB08W5W0=/fit-in/200x150/filters:strip_icc()/pic8389014.jpg",
+    "yearpublished": "2024",
+    "price": 24.00,
+    "players": {
+      "min": 2,
+      "max": 6
+    },
+    "description": "Découvrez et collectionnez des créatures fantastiques dans un monde enchanteur.",
+    "age": 8,
+    "rating": 7.4
+  },
+  {
+    "id": "342900",
+    "name": "Earthborne Rangers",
+    "thumbnail": "https://cf.geekdo-images.com/EVfMwPiHmxDUvY32BbghBg__thumb/img/CIgnW8j9uza_FhIcVxElLYgNDao=/fit-in/200x150/filters:strip_icc()/pic7378384.jpg",
+    "yearpublished": "2023",
+    "price": 35.20,
+    "players": {
+      "min": 1,
+      "max": 4
+    },
+    "description": "Incarnez un ranger dans un monde post-effondrement, entre écologie et aventure.",
+    "age": 14,
+    "rating": 8.3
+  },
+  {
+    "id": "385761",
+    "name": "Faraway",
+    "thumbnail": "https://cf.geekdo-images.com/u1cwi9BWSKsPxSkVO0BzbA__thumb/img/5G45GN8CE7pq38fJMMocmPtV4_U=/fit-in/200x150/filters:strip_icc()/pic7570101.png",
+    "yearpublished": "2023",
+    "price": 21.90,
+    "players": { "min": 2, "max": 6 },
+    "description": "Un jeu d'aventure poétique où les souvenirs influencent le présent.",
+    "age": 10,
+    "rating": 7.8
+  },
+  {
+    "id": "148261",
+    "name": "SeaFall",
+    "thumbnail": "https://cf.geekdo-images.com/8NYsQTJuPs_XVN2x1PdT4A__thumb/img/KBNn5qIs2qJeS9n3Fit7KbvYgeg=/fit-in/200x150/filters:strip_icc()/pic3571648.jpg",
+    "yearpublished": "2016",
+    "price": 28.70,
+    "players": { "min": 3, "max": 5 },
+    "description": "Un jeu legacy de découverte et d'exploration maritime avec évolution de campagne.",
+    "age": 14,
+    "rating": 6.9
+  },
+  {
+    "id": "416851",
+    "name": "Castle Combo",
+    "thumbnail": "https://cf.geekdo-images.com/rGomBfj0FGrZM-w3h5HFWQ__thumb/img/DnptKBxT6l_W2B3jGXdnEDEkDM0=/fit-in/200x150/filters:strip_icc()/pic8250341.png",
+    "yearpublished": "2024",
+    "price": 19.50,
+    "players": { "min": 2, "max": 4 },
+    "description": "Assemblez le meilleur château possible à l’aide de combinaisons stratégiques.",
+    "age": 8,
+    "rating": 7.2
+  },
+  {
+    "id": "441696",
+    "name": "Sanctuary",
+    "thumbnail": "https://cf.geekdo-images.com/C6V2VCtf1_7cavenn7Is3A__thumb/img/ZJJOWNSKk81xpvNkMpGd5T0ybLo=/fit-in/200x150/filters:strip_icc()/pic8932906.jpg",
+    "yearpublished": "2025",
+    "price": 27.90,
+    "players": { "min": 1, "max": 4 },
+    "description": "Créez un refuge sacré et affrontez les ténèbres dans un monde mystique.",
+    "age": 12,
+    "rating": 8.0
+  },
+  {
+    "id": "408637",
+    "name": "The Anarchy",
+    "thumbnail": "https://cf.geekdo-images.com/HJmk-KN7SCLH46kQ1JnkDw__thumb/img/xyJIOEBvETtxW7L2Vt82yAObBvw=/fit-in/200x150/filters:strip_icc()/pic7908662.jpg",
+    "yearpublished": "2025",
+    "price": 31.60,
+    "players": { "min": 2, "max": 5 },
+    "description": "Plongez dans une époque chaotique où chaque décision change le cours du royaume.",
+    "age": 13,
+    "rating": 8.2
+  },
+  {
+    "id": "199792",
+    "name": "Everdell",
+    "thumbnail": "https://cf.geekdo-images.com/fjE7V5LNq31yVEW_yuqI-Q__thumb/img/Cf_mYxR_VvdjTEPXseSurni2JNI=/fit-in/200x150/filters:strip_icc()/pic3918905.png",
+    "yearpublished": "2018",
+    "price": 33.30,
+    "players": { "min": 1, "max": 4 },
+    "description": "Construisez une ville forestière idyllique dans ce jeu enchanteur de gestion.",
+    "age": 10,
+    "rating": 8.4
+  },
+  {
+    "id": "373106",
+    "name": "Sky Team",
+    "thumbnail": "https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__thumb/img/WyPClajMWU9lV5BdCXiZnqdZgmU=/fit-in/200x150/filters:strip_icc()/pic7398904.jpg",
+    "yearpublished": "2023",
+    "price": 25.00,
+    "players": { "min": 2, "max": 2 },
+    "description": "Pilotez un avion à deux en coopération totale pour un atterrissage réussi.",
+    "age": 12,
+    "rating": 8.1
+  },
+  {
+    "id": "429293",
+    "name": "The Fellowship of the Ring: Trick-Taking Game",
+    "thumbnail": "https://cf.geekdo-images.com/uC4N_3kQdoHefNPesAHCzQ__thumb/img/hLjGKsIwJP43656LEnehjFVRzDE=/fit-in/200x150/filters:strip_icc()/pic8437787.png",
+    "yearpublished": "2024",
+    "price": 16.40,
+    "players": { "min": 3, "max": 5 },
+    "description": "Revivez le voyage de Frodon dans un jeu de plis stratégique et coopératif.",
+    "age": 10,
+    "rating": 7.3
+  },
+  {
+    "id": "371942",
+    "name": "The White Castle",
+    "thumbnail": "https://cf.geekdo-images.com/qXT1U-nFh9PE8ujfdmI7dA__thumb/img/ru1l95gdKNXSsByDglE9Xxgu0kE=/fit-in/200x150/filters:strip_icc()/pic7754663.jpg",
+    "yearpublished": "2023",
+    "price": 23.90,
+    "players": { "min": 1, "max": 4 },
+    "description": "Manœuvrez dans la hiérarchie féodale du Japon pour gagner prestige et pouvoir.",
+    "age": 12,
+    "rating": 8.0
+  },
+  {
+    "id": "266192",
+    "name": "Wingspan",
+    "thumbnail": "https://cf.geekdo-images.com/yLZJCVLlIx4c7eJEWUNJ7w__thumb/img/VNToqgS2-pOGU6MuvIkMPKn_y-s=/fit-in/200x150/filters:strip_icc()/pic4458123.jpg",
+    "yearpublished": "2019",
+    "price": 37.50,
+    "players": { "min": 1, "max": 5 },
+    "description": "Un jeu de collection et de gestion d’oiseaux dans un sanctuaire naturel.",
+    "age": 10,
+    "rating": 8.5
+  }
+
+]

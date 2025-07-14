@@ -1,0 +1,29 @@
+.form-adresse {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+  background: #f3f3f3;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.form-adresse input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-adresse button {
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-adresse button:hover {
+  background: #222;
+}

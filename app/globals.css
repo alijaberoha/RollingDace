@@ -1,42 +1,217 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* === CONTAINER PRINCIPAL === */
+.ctn {
+  background-image: url("/bg-play2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* === SECTION D’INTRODUCTION === */
+.produits-page {
+  padding: 150px 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.produits-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 650px;
+  font-size: 22px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* === GRILLE DES CARTES === */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #f5f5f5;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+/* === CARTE DE PRODUIT === */
+.card-produit {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 260px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-a {
-  color: inherit;
+.card-produit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.produit-image {
+  width: 100%;
+  height: 170px;
+  display: block;
+}
+
+.produit-info {
+  padding: 16px;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.produit-nom {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.produit-description {
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.produit-info p {
+  font-size: 0.95rem;
+}
+
+/* === PRIX === */
+.produit-prix {
+  margin-top: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.produit-prix button{
+  border: 1px solid black;
+  padding: 5px 12px;
+  border-radius: 5px;
   text-decoration: none;
+  color:white;
+  background-color: black;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.filtres {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.filtres input{
+  padding: 10px;
+  padding-right: 100px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.filtres select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .produits-page {
+    padding: 100px 20px 60px;
+  }
+
+  .produits-content {
+    font-size: 18px;
+    padding: 30px;
+  }
+
+  .card-produit {
+    width: 90%;
+    max-width: 320px;
   }
 }
+.about-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding-bottom: 40px;
+}
+
+.about-header {
+  text-align: center;
+  padding: 80px 20px 30px;
+  background-color: #111;
+  color: white;
+}
+
+.about-header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 500px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.about-image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 40px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+}
+.about-page {
+  background-image: url("/bg-about.jpg"); /* ✅ nom de ton image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* c’est ça qui la rend fixe */
+  min-height: 100vh;
+}
+
+.about-page h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
