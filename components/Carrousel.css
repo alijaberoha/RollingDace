@@ -152,3 +152,20 @@ text-align: center;
 .dot.active {
   background-color: white;
 }
+.membre-connected-section {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+}
+
+.membre-connected-section h2 {
+  font-size: 2rem;
+  
+  color: black;
+}
+
+.membre-connected-section p {
+  font-size: 1.1rem;
+  color: #333;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

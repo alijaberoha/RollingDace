@@ -30,7 +30,7 @@ export default function JeuDetailPage() {
         thumbnail: jeu.thumbnail,
         price: jeu.price,
         currency: jeu.currency,
-        quantite,
+    
       })
     );
   };

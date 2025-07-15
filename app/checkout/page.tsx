@@ -1,23 +1,32 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import FormulaireAdresse from "@/components/FormulaireAdresse";
 import Panier from "@/components/Panier";
 import PaiementSimule from "@/components/PaiementSimule";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "@/lib/store";
 import Link from "next/link";
-import { useDispatch } from "react-redux";
 import { viderPanier } from "@/features/panierSlice";
-
+import { useRouter } from "next/navigation";
 
 export default function CheckoutPage() {
   const [etape, setEtape] = useState(1);
   const [loading, setLoading] = useState(false);
+  const [dateLivraison, setDateLivraison] = useState("");
 
-  const panier = useSelector((state: RootState) => state.panier.items); // ✅ nom correct selon ton panierSlice
+  const panier = useSelector((state: RootState) => state.panier.items);
+  const dispatch = useDispatch();
+  const router = useRouter();
+
+  useEffect(() => {
+    const date = new Date();
+    date.setDate(date.getDate() + 2); // Ajouter 2 jours
+    const options: Intl.DateTimeFormatOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const formatted = date.toLocaleDateString("fr-FR", options);
+    setDateLivraison(formatted);
+  }, []);
 
   const next = () => {
-    // ✅ bloquer passage à l'étape 2 si panier vide
     if (etape === 1 && panier.length === 0) {
       alert("Votre panier est vide !");
       return;
@@ -26,12 +35,6 @@ export default function CheckoutPage() {
   };
 
   const prev = () => setEtape((prev) => prev - 1);
-const dispatch = useDispatch();
-
-const handleRetourAccueil = () => {
-  dispatch(viderPanier());
-};
-
 
   const nextWithLoading = () => {
     setLoading(true);
@@ -56,7 +59,11 @@ const handleRetourAccueil = () => {
       {etape === 3 && (
         <div className="confirmation-container">
           <h2> Paiement validé !</h2>
-          <p>Merci pour votre commande. Voici un récapitulatif :</p>
+      <p>Merci pour votre commande. Vous recevrez un e-mail de confirmation sous peu.</p>
+
+          <p>Votre commande arrivera dans 48h, le <strong>{dateLivraison}</strong>.</p>
+
+          <p>Voici un récapitulatif :</p>
 
           {panier.length === 0 ? (
             <p>Aucun article n'était présent dans le panier.</p>
@@ -65,8 +72,8 @@ const handleRetourAccueil = () => {
               <ul>
                 {panier.map((item) => (
                   <li key={item.id}>
-            <img src={item.thumbnail} alt={item.name} className="tendance-image" />
-            <br />
+                    <img src={item.thumbnail} alt={item.name} className="tendance-image" />
+                    <br />
                     {item.name} – {item.quantity} × {item.price}€ ={" "}
                     {(item.quantity * item.price).toFixed(2)}€
                   </li>
@@ -77,15 +84,33 @@ const handleRetourAccueil = () => {
                   Total :{" "}
                   {panier
                     .reduce((total, item) => total + item.price * item.quantity, 0)
-                    .toFixed(2)}€</strong>
+                    .toFixed(2)}€
+                </strong>
               </p>
-              
             </>
           )}
-<Link href="/" onClick={handleRetourAccueil}>
-  <button className="btn-retour">Retour à l’accueil</button>
-</Link>
 
+          <button
+            className="btn-retour"
+            onClick={() => {
+              dispatch(viderPanier());
+
+              const pendingUser = JSON.parse(localStorage.getItem("newUserPending") || "null");
+
+              if (pendingUser) {
+                const utilisateurs = JSON.parse(localStorage.getItem("utilisateurs") || "[]");
+                const nouveau = [...utilisateurs, { ...pendingUser, abonnement: true }];
+                localStorage.setItem("utilisateurs", JSON.stringify(nouveau));
+                localStorage.removeItem("newUserPending");
+
+                router.push("/login");
+              } else {
+                router.push("/");
+              }
+            }}
+          >
+            Terminer
+          </button>
         </div>
       )}
 

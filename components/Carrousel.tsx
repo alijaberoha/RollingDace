@@ -3,20 +3,20 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import "./Carrousel.css";
+import { useSelector } from "react-redux";
 
-const images = [ "/carous1.jpg", "/carous6.jpg","/carous7.jpg"];
+const images = ["/carous1.jpg", "/carous6.jpg", "/carous7.jpg"];
 
 const textes = [
-
   {
     titre: " Découvrez l'univers des jeux",
     sousTitre: "Des classiques intemporels aux nouveautés excitantes.",
   },
-        {
+  {
     titre: " Des offres spéciales en cours",
     sousTitre: "Profitez de réductions exceptionnelles sur nos best-sellers.",
   },
-    {
+  {
     titre: " Grand et petit, amusez-vous en famille",
     sousTitre: "Des jeux pour petits et grands, à tout moment.",
   },
@@ -24,6 +24,7 @@ const textes = [
 
 export default function Carousel() {
   const [current, setCurrent] = useState(0);
+  const user = useSelector((state: any) => state.auth.user); // 👤 utilisateur connecté
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -68,16 +69,29 @@ export default function Carousel() {
         </div>
       </div>
 
-      <section className="membre-section">
-        <div className="membre-content">
-          <h2> Devenez membre</h2>
-          <p>
-            Profitez de <span className="highlight">-50%</span> sur tous nos jeux !
-            Rejoignez notre communauté et recevez des surprises exclusives 
-          </p>
-          <button className="membre-btn">Connexion</button>
-        </div>
-      </section>
+      {/* 🔁 Section membre ou membre connecté */}
+      {!user ? (
+        <section className="membre-section">
+          <div className="membre-content">
+            <h2>Devenez membre</h2>
+            <p>
+              Profitez de <span className="highlight">-50%</span> sur tous nos jeux !
+              Rejoignez notre communauté et recevez des surprises exclusives
+            </p>
+            <button className="membre-btn">Connexion</button>
+          </div>
+        </section>
+      ) : (
+        <section className="membre-connected-section">
+          <div className="membre-content">
+            <h2>Bienvenue, {user.email.split("@")[0]} !</h2>
+            <p>
+              Merci de faire partie des membres <strong>Rolling Dice</strong>.<br />
+              Vos avantages exclusifs sont activés. Profitez à fond !
+            </p>
+          </div>
+        </section>
+      )}
     </>
   );
 }
