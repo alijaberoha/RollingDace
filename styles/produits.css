@@ -107,6 +107,11 @@ body{
     text-align: center;
     
   }
+  .produits-cotent {
+    display: flex;
+    flex-direction: column
+    ;
+  }
 }
 .quantite-selector {
   display: flex;

@@ -49,3 +49,51 @@
 .model-text button:hover {
   background-color: #333;
 }
+@media (max-width: 768px) {
+  .model-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .model-view {
+    width: 100%;
+    height: 300px;
+  }
+
+  .model-text h2 {
+    font-size: 24px;
+  }
+
+  .model-text p {
+    font-size: 15px;
+  }
+
+  .model-text button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .model-section {
+    padding: 30px 15px;
+  }
+
+  .model-view {
+    height: 220px;
+  }
+
+  .model-text h2 {
+    font-size: 20px;
+  }
+
+  .model-text p {
+    font-size: 14px;
+  }
+
+  .model-text button {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}

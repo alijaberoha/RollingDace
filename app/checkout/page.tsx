@@ -7,7 +7,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "@/lib/store";
 import { viderPanier } from "@/features/panierSlice";
 import { useRouter } from "next/navigation";
-
+import "../../styles/checkout.css"
 export default function CheckoutPage() {
   const [etape, setEtape] = useState(1);
   const [loading, setLoading] = useState(false);

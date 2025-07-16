@@ -174,3 +174,124 @@ text-align: center;
   padding: 30px;
   text-align: center;
 }
+@media (max-width: 1024px) {
+  .carousel {
+    height: 400px;
+  }
+
+  .carousel-text {
+    padding: 20px;
+  }
+
+  .carousel-text h2 {
+    font-size: 2rem;
+  }
+
+  .carousel-text p {
+    font-size: 1rem;
+  }
+
+  .membre-content {
+    padding: 20px;
+  }
+
+  .membre-content h2 {
+    font-size: 28px;
+  }
+
+  .membre-content p {
+    font-size: 16px;
+  }
+
+  .membre-btn {
+    font-size: 15px;
+    padding: 10px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 300px;
+  }
+
+  .carousel-text {
+    padding: 15px;
+  }
+
+  .carousel-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-text p {
+    font-size: 0.9rem;
+  }
+
+  .membre-content {
+    margin-top: 30px;
+    padding: 16px;
+  }
+
+  .membre-content h2 {
+    font-size: 24px;
+  }
+
+  .membre-content p {
+    font-size: 15px;
+  }
+
+  .membre-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .membre-connected-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .membre-connected-section p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    height: 240px;
+  }
+
+  .carousel-text {
+    padding: 12px;
+  }
+
+  .carousel-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .carousel-text p {
+    font-size: 0.85rem;
+  }
+
+  .membre-content {
+    padding: 14px;
+  }
+
+  .membre-content h2 {
+    font-size: 20px;
+  }
+
+  .membre-content p {
+    font-size: 14px;
+  }
+
+  .membre-btn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .membre-connected-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .membre-connected-section p {
+    font-size: 0.95rem;
+  }
+}

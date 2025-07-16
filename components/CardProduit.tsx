@@ -1,6 +1,7 @@
 import React from "react";
 import "../app/globals.css"; // adapte selon ton projet
 import Link from "next/link"; // 👈 importe Link
+import type { Produit } from "@/features/produitSlice";
 
 type Props = {
   jeu: {

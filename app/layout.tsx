@@ -1,6 +1,7 @@
 
 import ReduxProvider from "@/lib/redux-provider";
 import Footer from "@/components/Footer";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Rolling Dice",

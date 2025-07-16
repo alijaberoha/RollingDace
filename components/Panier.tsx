@@ -31,60 +31,75 @@ export default function Panier({ isOpen, onClose, hideCommanderButton }: Props) 
   // 💸 Total avec -50% si membre
   const total = user?.abonnement ? totalSansReduc * 0.5 : totalSansReduc;
 
+  // ❌ Empêche le scroll du body quand le panier est ouvert
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
     window.addEventListener("keydown", handleKey);
-    return () => window.removeEventListener("keydown", handleKey);
-  }, [onClose]);
+
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKey);
+      document.body.style.overflow = "";
+    };
+  }, [isOpen, onClose]);
 
   return (
-    <div className={`cart-modal ${isOpen ? "open" : ""}`}>
-      <div className="cart-header">
-        <div className="title">
-          <h2>
-            <FaShoppingCart style={{ cursor: "pointer" }} /> --Votre panier
-          </h2>
-        </div>
-        <button onClick={onClose}>✕</button>
-      </div>
+    <>
+      {isOpen && <div className="cart-backdrop" onClick={onClose} />}
 
-      <div className="cart-content">
-        {items.length === 0 ? (
-          <p>Aucun article pour le moment.</p>
-        ) : (
-          items.map((item) => (
-            <div key={item.id} className="cart-item">
-              <img src={item.thumbnail} alt={item.name} width={50} />
-              <div className="info">
-                <p>{item.name}</p>
-                <p>{item.price} €</p>
-                <div className="quantity-controls">
-                  <button onClick={() => dispatch(decrementerQuantite(item.id))}>−</button>
-                  <span>{item.quantity}</span>
-                  <button onClick={() => dispatch(incrementerQuantite(item.id))}>+</button>
-                </div>
-              </div>
-              <button onClick={() => dispatch(supprimerDuPanier(item.id))}>🗑</button>
-            </div>
-          ))
-        )}
-      </div>
-
-      {items.length > 0 && (
-        <div className="cart-footer">
-          <div className="total">
-            <strong>Total :</strong> {total.toFixed(2)} €
+      <div className={`cart-modal ${isOpen ? "open" : ""}`}>
+        <div className="cart-header">
+          <div className="title">
+            <h2>
+              <FaShoppingCart style={{ cursor: "pointer" }} /> --Votre panier
+            </h2>
           </div>
+          <button onClick={onClose}>✕</button>
+        </div>
 
-          {!hideCommanderButton && (
-            <Link href="/checkout">
-              <button className="checkout-btn">Commander</button>
-            </Link>
+        <div className="cart-content">
+          {items.length === 0 ? (
+            <p>Aucun article pour le moment.</p>
+          ) : (
+            items.map((item) => (
+              <div key={item.id} className="cart-item">
+                <img src={item.thumbnail} alt={item.name} width={50} />
+                <div className="info">
+                  <p>{item.name}</p>
+                  <p>{item.price} €</p>
+                  <div className="quantity-controls">
+                    <button onClick={() => dispatch(decrementerQuantite(item.id))}>−</button>
+                    <span>{item.quantity}</span>
+                    <button onClick={() => dispatch(incrementerQuantite(item.id))}>+</button>
+                  </div>
+                </div>
+                <button onClick={() => dispatch(supprimerDuPanier(item.id))}>🗑</button>
+              </div>
+            ))
           )}
         </div>
-      )}
-    </div>
+
+        {items.length > 0 && (
+          <div className="cart-footer">
+            <div className="total">
+              <strong>Total :</strong> {total.toFixed(2)} €
+            </div>
+
+            {!hideCommanderButton && (
+              <Link href="/checkout">
+                <button className="checkout-btn">Commander</button>
+              </Link>
+            )}
+          </div>
+        )}
+      </div>
+    </>
   );
 }

@@ -1,18 +1,45 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const fetchProduits = createAsyncThunk("produits/fetch", async () => {
-  const response = await axios.get("/jeux_50.json"); // ✅ fichier local
-  return response.data;
-});
+// ✅ Type du produit
+export type Produit = {
+  id: string;
+  name: string;
+  age?: number;
+  rating?: number;
+  players?: {
+    min?: number;
+    max?: number;
+  };
+};
 
+// ✅ Type du state
+type ProduitState = {
+  items: Produit[];
+  loading: boolean;
+  error: string | null;
+};
+
+// ✅ Initial state
+const initialState: ProduitState = {
+  items: [],
+  loading: false,
+  error: null,
+};
+
+// ✅ Thunk pour récupérer les produits depuis le fichier local
+export const fetchProduits = createAsyncThunk<Produit[]>(
+  "produits/fetch",
+  async () => {
+    const response = await axios.get("/jeux_50.json");
+    return response.data;
+  }
+);
+
+// ✅ Slice
 const produitSlice = createSlice({
   name: "produits",
-  initialState: {
-    items: [],
-    loading: false,
-    error: null,
-  },
+  initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
@@ -26,7 +53,7 @@ const produitSlice = createSlice({
       })
       .addCase(fetchProduits.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.error.message || "Erreur inconnue";
+        state.error = action.error.message ?? "Erreur inconnue";
       });
   },
 });

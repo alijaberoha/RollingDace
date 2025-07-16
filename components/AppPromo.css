@@ -59,4 +59,83 @@
     gap: 10px;
   }
 }
+@media (max-width: 1024px) {
+  .app-promo {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  .phones img {
+    max-width: 160px;
+  }
+
+  .promo-text h2 {
+    font-size: 24px;
+  }
+
+  .promo-text p {
+    font-size: 15px;
+  }
+
+  .store-buttons img {
+    width: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-promo {
+    padding: 30px 15px;
+    gap: 30px;
+  }
+
+  .phones {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .phones img {
+    max-width: 140px;
+  }
+
+  .promo-text h2 {
+    font-size: 22px;
+  }
+
+  .promo-text p {
+    font-size: 14px;
+  }
+
+  .store-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .store-buttons img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-promo {
+    padding: 20px 10px;
+  }
+
+  .phones img {
+    max-width: 120px;
+  }
+
+  .promo-text h2 {
+    font-size: 20px;
+  }
+
+  .promo-text p {
+    font-size: 13px;
+  }
+
+  .store-buttons img {
+    width: 100px;
+  }
+}
+
 

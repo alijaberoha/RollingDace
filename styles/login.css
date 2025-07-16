@@ -62,3 +62,50 @@ body{
   color: red;
   margin-top: 0.5rem;
 }
+@media (max-width: 768px) {
+  .login-container {
+    margin: 100px 20px;
+    padding: 20px;
+  }
+
+  .login-container h2 {
+    font-size: 22px;
+  }
+
+  input {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .switch-auth {
+    font-size: 13px;
+  }
+
+  .login-container .retour-accueil {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .login-container {
+    margin: 80px 15px;
+    padding: 15px;
+  }
+
+  .login-container h2 {
+    font-size: 20px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
