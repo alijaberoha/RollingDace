@@ -1,13 +1,14 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/checkout.css";
 
 type Props = {
   onNext: () => void;
   loading: boolean;
+  onValidationChange: (valide: boolean) => void;
 };
 
-export default function PaiementSimule({ onNext, loading }: Props) {
+export default function PaiementSimule({ onNext, loading, onValidationChange }: Props) {
   const [cardInfo, setCardInfo] = useState({
     nom: "",
     numero: "",
@@ -15,18 +16,34 @@ export default function PaiementSimule({ onNext, loading }: Props) {
     code: "",
   });
 
+  // Vérifie la validité à chaque changement
+  useEffect(() => {
+    const tousRemplis = Object.values(cardInfo).every((val) => val.trim() !== "");
+    const formatCarteOk = /^[0-9]{10}$/.test(cardInfo.numero); // exactement 10 chiffres
+    onValidationChange(tousRemplis && formatCarteOk);
+  }, [cardInfo, onValidationChange]);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setCardInfo({ ...cardInfo, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+
+    if (name === "numero") {
+      // N’autorise que les chiffres et max 10 caractères
+      const numeriqueSeulement = value.replace(/\D/g, "");
+      if (numeriqueSeulement.length <= 10) {
+        setCardInfo({ ...cardInfo, numero: numeriqueSeulement });
+      }
+    } else {
+      setCardInfo({ ...cardInfo, [name]: value });
+    }
   };
 
   const handlePayer = (e: React.FormEvent) => {
     e.preventDefault();
-
-    // Facultatif : vérifie que tous les champs sont remplis
     const tousRemplis = Object.values(cardInfo).every((val) => val.trim() !== "");
-    if (!tousRemplis) return;
+    const formatCarteOk = /^[0-9]{10}$/.test(cardInfo.numero);
+    if (!tousRemplis || !formatCarteOk) return;
 
-    onNext(); // délégué au parent (CheckoutPage) avec loading géré là-bas
+    onNext(); // Passe à l’étape suivante (confirmation)
   };
 
   return (
@@ -44,9 +61,10 @@ export default function PaiementSimule({ onNext, loading }: Props) {
       <input
         type="text"
         name="numero"
-        placeholder="Numéro de carte"
+        placeholder="Numéro de carte (10 chiffres)"
         value={cardInfo.numero}
         onChange={handleChange}
+        inputMode="numeric"
         required
       />
       <input

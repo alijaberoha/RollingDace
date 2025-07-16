@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import Link from "next/link";
 import "../../styles/register.css";
 import { ajouterAuPanier } from "@/features/panierSlice";
-
+import carte from "../../public/cartes.avif"
 export default function RegisterPage() {
   const router = useRouter();
   const dispatch = useDispatch();
@@ -42,7 +42,7 @@ export default function RegisterPage() {
       dispatch(ajouterAuPanier({
         id: "abonnement",
         name: "Abonnement 50%",
-        thumbnail: "/images/abonnement.png",
+        thumbnail: carte.src,
         price: 100,
         currency: "€",
       }));

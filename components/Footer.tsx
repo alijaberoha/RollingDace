@@ -5,7 +5,9 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-left">
+                <Link href="/">
 <img src="/logo.png" alt="logo" style={{ width: "220px", height: "170px" }} />
+        </Link>       
         <div className="social-icons">
           <a href="#"><i className="fab fa-facebook-f"></i></a>
           <a href="#"><i className="fab fa-linkedin-in"></i></a>

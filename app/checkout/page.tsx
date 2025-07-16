@@ -5,7 +5,6 @@ import Panier from "@/components/Panier";
 import PaiementSimule from "@/components/PaiementSimule";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "@/lib/store";
-import Link from "next/link";
 import { viderPanier } from "@/features/panierSlice";
 import { useRouter } from "next/navigation";
 
@@ -13,24 +12,34 @@ export default function CheckoutPage() {
   const [etape, setEtape] = useState(1);
   const [loading, setLoading] = useState(false);
   const [dateLivraison, setDateLivraison] = useState("");
+  const [formulaireValide, setFormulaireValide] = useState(false);
+  const [paiementValide, setPaiementValide] = useState(false);
 
   const panier = useSelector((state: RootState) => state.panier.items);
   const dispatch = useDispatch();
   const router = useRouter();
 
+  // Calculer la date de livraison
   useEffect(() => {
     const date = new Date();
-    date.setDate(date.getDate() + 2); // Ajouter 2 jours
-    const options: Intl.DateTimeFormatOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    const formatted = date.toLocaleDateString("fr-FR", options);
-    setDateLivraison(formatted);
+    date.setDate(date.getDate() + 2);
+    const options: Intl.DateTimeFormatOptions = {
+      weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    };
+    setDateLivraison(date.toLocaleDateString("fr-FR", options));
   }, []);
 
-  const next = () => {
-    if (etape === 1 && panier.length === 0) {
-      alert("Votre panier est vide !");
-      return;
+  // Vérifier si panier vide → rediriger
+  useEffect(() => {
+    if (panier.length === 0 && etape !== 3) {
+      alert("Votre panier est vide.");
+      router.push("/produits");
     }
+  }, [panier, etape, router]);
+
+  const next = () => {
+    if (etape === 1 && !formulaireValide) return;
+    if (etape === 2 && !paiementValide) return;
     setEtape((prev) => prev + 1);
   };
 
@@ -50,20 +59,39 @@ export default function CheckoutPage() {
         <button disabled={etape === 1 || loading} onClick={prev}>⬅</button>
         <span>Étape {etape}/3</span>
         {etape < 3 && (
-          <button disabled={loading} onClick={etape === 2 ? nextWithLoading : next}>➡</button>
+          <button
+            disabled={loading || (etape === 1 && !formulaireValide) || (etape === 2 && !paiementValide)}
+            onClick={etape === 2 ? nextWithLoading : next}
+          >
+            ➡
+          </button>
         )}
       </div>
 
-      {etape === 1 && <FormulaireAdresse onNext={next} />}
-      {etape === 2 && <PaiementSimule onNext={nextWithLoading} loading={loading} />}
+      <button onClick={() => router.push("/produits")} className="btn-secondaire">
+        ⬅ Continuer ses achats
+      </button>
+
+      {etape === 1 && (
+        <FormulaireAdresse
+          onNext={next}
+          onValidationChange={(valide: boolean) => setFormulaireValide(valide)}
+        />
+      )}
+
+      {etape === 2 && (
+        <PaiementSimule
+          onNext={nextWithLoading}
+          loading={loading}
+          onValidationChange={(valide: boolean) => setPaiementValide(valide)}
+        />
+      )}
+
       {etape === 3 && (
         <div className="confirmation-container">
-          <h2> Paiement validé !</h2>
-      <p>Merci pour votre commande. Vous recevrez un e-mail de confirmation sous peu.</p>
-
-          <p>Votre commande arrivera dans 48h, le <strong>{dateLivraison}</strong>.</p>
-
-          <p>Voici un récapitulatif :</p>
+          <h2>✅ Paiement validé !</h2>
+          <p>Merci pour votre commande. Vous recevrez un e-mail de confirmation sous peu.</p>
+          <p>📦 Votre commande arrivera dans 48h, le <strong>{dateLivraison}</strong>.</p>
 
           {panier.length === 0 ? (
             <p>Aucun article n'était présent dans le panier.</p>

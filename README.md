@@ -1,3 +1,38 @@
+# Rolling Dice – E-commerce de jeux de société
+
+Rolling Dice est un site e-commerce permettant de découvrir, filtrer et acheter des jeux de société en ligne. Il propose un système d'abonnement donnant droit à une réduction de 50 % sur toutes les commandes.
+
+## Fonctionnalités
+
+- Navigation par catalogue et page de détail d’un jeu
+- Panier avec ajout, suppression et ajustement des quantités
+- Authentification (connexion, inscription)
+- Paiement simulé en trois étapes
+- Abonnement premium avec réduction automatique
+- Récapitulatif de commande avec estimation de livraison
+
+## Technologies utilisées
+
+- Next.js (App Router)
+- TypeScript / React
+- Redux Toolkit (auth et panier)
+- CSS Modules
+- LocalStorage
+- Déploiement via Vercel
+
+## Installation locale
+
+```bash
+npm install
+npm run dev
+
+/app            → Pages (produits, login, checkout...)
+/components     → Composants réutilisables (Nav, Panier, etc.)
+/features       → Redux slices (auth, panier)
+/public         → Images statiques
+/styles         → Fichiers CSS
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

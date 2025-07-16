@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import "./Carrousel.css";
 import { useSelector } from "react-redux";
-
+import { FaShoppingCart ,FaGem} from "react-icons/fa";
+import Link from "next/link";
 const images = ["/carous1.jpg", "/carous6.jpg", "/carous7.jpg"];
 
 const textes = [
@@ -78,16 +79,18 @@ export default function Carousel() {
               Profitez de <span className="highlight">-50%</span> sur tous nos jeux !
               Rejoignez notre communauté et recevez des surprises exclusives
             </p>
+                  <Link href="/login">
             <button className="membre-btn">Connexion</button>
+            </Link>
           </div>
         </section>
       ) : (
         <section className="membre-connected-section">
           <div className="membre-content">
-            <h2>Bienvenue, {user.email.split("@")[0]} !</h2>
+            <h2>  Bienvenue, {user.email.split("@")[0]} !</h2>
             <p>
-              Merci de faire partie des membres <strong>Rolling Dice</strong>.<br />
-              Vos avantages exclusifs sont activés. Profitez à fond !
+              Merci de faire confiance a <strong>Rolling Dice </strong>.<br />
+              vous recevrez un email de remerciment sous peu. Profitez à fond !
             </p>
           </div>
         </section>
