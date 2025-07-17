@@ -2,6 +2,7 @@
 import ReduxProvider from "@/lib/redux-provider";
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
+import "../styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Rolling Dice",
