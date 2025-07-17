@@ -88,8 +88,8 @@ export default function PaiementSimule({ onNext, loading, onValidationChange }: 
         {loading ? "Traitement en cours..." : "Payer"}
       </button>
 
-      <img src="/pay1.png" alt="Carte 1" />
-      <img src="/pay2.png" alt="Carte 2" />
+      <img src="/pay1.PNG" alt="Carte 1" />
+      <img src="/pay2.PNG" alt="Carte 2" />
     </form>
   );
 }
