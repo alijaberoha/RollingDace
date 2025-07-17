@@ -68,9 +68,12 @@ export default function CheckoutPage() {
         )}
       </div>
 
-      <button onClick={() => router.push("/produits")} className="btn-secondaire">
-        ⬅ Continuer ses achats
-      </button>
+{etape !== 3 && (
+  <button onClick={() => router.push("/produits")} className="btn-secondaire">
+    ⬅ Continuer ses achats
+  </button>
+)}
+
 
       {etape === 1 && (
         <FormulaireAdresse
