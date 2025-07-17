@@ -24,7 +24,7 @@ export default function AboutPage() {
           </div>
 
           <div className="about-image">
-            <img src="/contacte.png" alt="Nous contacter" />
+            <img src="/contacte.PNG" alt="Nous contacter" />
           </div>
         </div>
         <App/>
